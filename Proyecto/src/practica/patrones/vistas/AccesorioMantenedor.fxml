@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practica.patrones.vistas.AccesoriosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff12" height="156.0" layoutX="59.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Label layoutX="113.0" layoutY="30.0" text="Mantenedor de Accesorios" textFill="#d32828">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstAccesorios" layoutX="56.0" layoutY="87.0" onMouseClicked="#doSeleccionarAccesorio" prefHeight="135.0" prefWidth="369.0" />
+      <Label fx:id="lblCodigo" layoutX="65.0" layoutY="265.0" text="Codigo:" />
+      <TextField fx:id="txtCodigo" layoutX="119.0" layoutY="261.0" prefHeight="25.0" prefWidth="52.0" />
+      <Label fx:id="lblMarca" layoutX="66.0" layoutY="305.0" text="Marca:" />
+      <TextField fx:id="txtMarca" layoutX="108.0" layoutY="301.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label fx:id="lblNombres" layoutX="64.0" layoutY="346.0" text="Nombres:" />
+      <TextField fx:id="txtNombres" layoutX="123.0" layoutY="342.0" prefHeight="25.0" prefWidth="255.0" />
+      <Button fx:id="btnGrabar" layoutX="134.0" layoutY="434.0" mnemonicParsing="false" onAction="#doGrabar" prefHeight="25.0" prefWidth="93.0" text="Grabar" />
+      <Button fx:id="btnEliminar" layoutX="235.0" layoutY="434.0" mnemonicParsing="false" onAction="#doEliminar" prefHeight="25.0" prefWidth="93.0" text="Eliminar" />
+      <Label fx:id="lblCantidad" layoutX="218.0" layoutY="265.0" text="Cantidad Disponible:" />
+      <TextField fx:id="txtCantidad" layoutX="332.0" layoutY="261.0" prefHeight="25.0" prefWidth="93.0" />
+      <Label fx:id="lblPrecio" layoutX="237.0" layoutY="305.0" text="Precio:" />
+      <TextField fx:id="txtPrecio" layoutX="282.0" layoutY="301.0" prefHeight="17.0" prefWidth="93.0" />
+   </children>
+</AnchorPane>
